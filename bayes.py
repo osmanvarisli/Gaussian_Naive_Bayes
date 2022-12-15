@@ -30,7 +30,7 @@ X, y = load_breast_cancer(return_X_y=True)
 
 #diabet dataseti
 from sklearn import preprocessing
-with open("dataset/diabetes.csv", 'r') as x:
+with open("diabetes.csv", 'r') as x:
     diabet_data = list(csv.reader(x, delimiter=","))
 diabet_data = np.array(diabet_data)
 diabet_data = np.delete(diabet_data, 0, axis=0) #başlıkları siliyoruz
